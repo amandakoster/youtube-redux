@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 const API_KEY= 'AIzaSyDrMKV08QY0agCAddJvXYkrraaFANuRqDg'
 import SearchBar from './searchbar';
+import VideoList from './video-list';
 
 
 
@@ -23,7 +24,7 @@ class App extends Component {
 
       <div>YoutTube app with React and Redux</div>
       <SearchBar />
-
+      <VideoList videos={this.state.videos} />
       </div>
     );
   }
